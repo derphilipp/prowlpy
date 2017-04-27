@@ -50,8 +50,8 @@ which implements four methods :
 - retrieve_apikey, to get an API key from a registration token retrieved in
   retrieve/token.
 """
-from httplib import HTTPSConnection as Https
-from urllib import urlencode
+from http.client import HTTPSConnection as Https
+from urllib.parse import urlencode
 from xml.dom import minidom
 
 API_DOMAIN = 'api.prowlapp.com'

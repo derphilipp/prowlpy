@@ -57,8 +57,8 @@ __maintainer__ = 'Olivier Hervieu'
 __maintainer_email__ = 'olivier.hervieu@gmail.com'
 __version__ = 0.51
 
-from httplib import HTTPSConnection as Https
-from urllib import urlencode
+from http.client import HTTPSConnection as Https
+from urllib.parse import urlencode
 from xml.dom import minidom
 
 API_DOMAIN = 'api.prowlapp.com'
